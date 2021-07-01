@@ -4,16 +4,30 @@ $user = "Gaurav";
 <!DOCTYPE html>
 <html>
 <head> <title> program 6 </title></head>
-<body>
-    <body style="background-color:blue;">
-        <span style="color:#FFFFFF;text-align:center;">
-<h1> <?php echo $user; ?>,Welcome to Sample PHP Script </h1>
-
-<?php
-echo "<p align='left'> <font color=white  size='5pt'><b>This Programs displays the number page visits</font></b> </p>";
-echo "<p align='left'> <font color=white  size='5pt'><b>REFRESH PAGE</font></b> </p>";
+<style>
+    h1{
+        color: white;
+        text-align: center;
+    }
+    h2{
+        color: white;
+        text-align: left;
+    }
+    h3{
+        color: white;
+        text-align: left;
+    }
+    body{
+        background-color: blue;
+        color: white;
+    }
+   
+</style>
+<?php 
+echo "<h1>$user,Welcome to Sample PHP Script </h1>";
+echo "<h2>This Programs displays the number page visits</h2>";
+echo "<h3>REFRESH PAGE</h3>"; 
 ?>
-          
 <?php
 $name="counter.txt";
 $file = fopen($name,"r");
